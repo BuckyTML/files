@@ -1,5 +1,6 @@
-@echo off
-:check
-ping 127.0.0.1 > nul
-cls
-goto check
+$i = 360
+do {
+    Write-Host $i
+    Sleep 60
+    $i--
+} while ($i -gt 0)
